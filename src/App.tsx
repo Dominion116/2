@@ -159,7 +159,7 @@ function App() {
             <div className="flex animate-scroll-x whitespace-nowrap">
                 {[...Array(10)].map((_, i) => (
                     <span key={i} className="text-[10px] uppercase tracking-[0.4em] font-black text-primary/30 mx-8">
-                        PUMP SECOND YEAR ANNIVERSARY • $2 IS THE LOGICAL CHOICE • 
+                        PUMPFUN SECOND YEAR ANNIVERSARY • $2 IS THE LOGICAL CHOICE • 
                     </span>
                 ))}
             </div>
