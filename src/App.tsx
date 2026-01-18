@@ -258,17 +258,11 @@ function App() {
                 <span className="opacity-50">$2 TOKEN</span>
             </div>
             <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-10 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                <a href="#" className="flex items-center gap-2 hover:text-primary transition-colors group">
+                <a href="https://x.com/i/communities/2012878879690571871" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors group">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-secondary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
                         <Twitter className="w-4 h-4" />
                     </div>
                     Twitter
-                </a>
-                <a href="#" className="flex items-center gap-2 hover:text-primary transition-colors group">
-                    <div className="w-8 h-8 flex items-center justify-center rounded-full bg-secondary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
-                        <Send className="w-4 h-4" />
-                    </div>
-                    Telegram
                 </a>
                 <a href="https://dexscreener.com/solana/EiRHCimGDq968yAUHeGyjr6mVBGxnWocreYNttPQEkPh" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors group">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-secondary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
