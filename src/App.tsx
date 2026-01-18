@@ -102,7 +102,7 @@ function App() {
                     </Badge>
                     <h1 className="text-4xl sm:text-6xl lg:text-8xl font-black tracking-tight leading-[1.1] lg:leading-[1] mb-6 lg:mb-8">
                         The Power of <br/>
-                        <span className="text-primary underline decoration-primary/20 decoration-4 sm:decoration-8 underline-offset-4 sm:underline-offset-8">Two.</span>
+                        <span className="text-primary underline decoration-primary/20 decoration-4 sm:decoration-8 underline-offset-4 sm:underline-offset-8">$2</span>
                     </h1>
                     <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium">
                         No roadmap. No complex utility. Just a commemorative token celebrating a legendary milestone. Simple, honest, and purely for the culture.
