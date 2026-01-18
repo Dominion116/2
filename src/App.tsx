@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Toaster } from "@/components/ui/sonner"
 import { toast } from "sonner"
-import { Copy, Rocket, CheckCircle2, PartyPopper, ArrowRight, Dna } from "lucide-react"
+import { Copy, Rocket, CheckCircle2, PartyPopper, ArrowRight, Dna, Twitter, Send, BarChart2 } from "lucide-react"
 import Logo from "@/assets/logo.png"
 import confetti from "canvas-confetti"
 import { motion } from "framer-motion"
@@ -29,6 +29,14 @@ const Navbar = ({ onCopy }: { onCopy: () => void }) => (
     </nav>
 )
 
+const BackgroundEffects = () => (
+    <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] mix-blend-multiply animate-pulse" />
+        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px] mix-blend-multiply animate-pulse" />
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
+    </div>
+)
+
 function App() {
   const CA = "E9wczLkHYnwhSeVjSx5myGb318dN8Po6UvjR3jb7pump"
   const [copied, setCopied] = useState(false)
@@ -37,7 +45,7 @@ function App() {
     navigator.clipboard.writeText(CA)
     setCopied(true)
     toast.success("Copied to clipboard", {
-      className: "bg-background border-border",
+      className: "bg-background border-border shadow-2xl",
       icon: <CheckCircle2 className="w-4 h-4 text-primary" />,
     })
     setTimeout(() => setCopied(false), 2000)
@@ -74,7 +82,8 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground">
+    <div className="min-h-screen bg-background font-sans text-foreground relative">
+      <BackgroundEffects />
       <Toaster position="bottom-right" />
       <Navbar onCopy={handleCopy} />
       
@@ -145,8 +154,19 @@ function App() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30 border-y border-border/50">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-16 lg:py-24 bg-secondary/30 border-y border-border/50 relative overflow-hidden">
+        {/* Vibe Marquee */}
+        <div className="absolute top-0 left-0 w-full overflow-hidden py-2 bg-primary/5 border-b border-primary/10 select-none pointer-events-none">
+            <div className="flex animate-scroll-x whitespace-nowrap">
+                {[...Array(10)].map((_, i) => (
+                    <span key={i} className="text-[10px] uppercase tracking-[0.4em] font-black text-primary/30 mx-8">
+                        2 YEARS OF PUMP • $2 IS THE LOGICAL CHOICE • IF YOU GET IT YOU GET IT • 2 LEGIT 2 QUIT • VIBE CHECK: 200% • 
+                    </span>
+                ))}
+            </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 mt-12 lg:mt-16">
             <div className="text-center max-w-2xl mx-auto mb-12 lg:mb-20">
                 <h2 className="text-3xl lg:text-5xl font-black tracking-tight mb-4 lg:mb-6">Why $2?</h2>
                 <p className="text-muted-foreground text-lg lg:text-xl font-medium">
@@ -239,12 +259,28 @@ function App() {
                 <span className="opacity-50">$2 TOKEN</span>
             </div>
             <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-10 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                <a href="#" className="hover:text-primary transition-colors">Twitter</a>
-                <a href="#" className="hover:text-primary transition-colors">Telegram</a>
-                <a href="#" className="hover:text-primary transition-colors">Dexscreener</a>
+                <a href="#" className="flex items-center gap-2 hover:text-primary transition-colors group">
+                    <div className="w-8 h-8 flex items-center justify-center rounded-full bg-secondary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                        <Twitter className="w-4 h-4" />
+                    </div>
+                    Twitter
+                </a>
+                <a href="#" className="flex items-center gap-2 hover:text-primary transition-colors group">
+                    <div className="w-8 h-8 flex items-center justify-center rounded-full bg-secondary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                        <Send className="w-4 h-4" />
+                    </div>
+                    Telegram
+                </a>
+                <a href="#" className="flex items-center gap-2 hover:text-primary transition-colors group">
+                    <div className="w-8 h-8 flex items-center justify-center rounded-full bg-secondary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                        <BarChart2 className="w-4 h-4" />
+                    </div>
+                    Dexscreener
+                </a>
             </div>
-            <p className="text-[10px] font-medium text-muted-foreground/60 max-w-[200px] lg:max-w-none">
-                © 2026 THE LEGEND OF TWO. BUILD FOR THE COMMUNITY.
+            <p className="text-[10px] font-medium text-muted-foreground/60 max-w-[200px] lg:max-w-none text-center lg:text-right">
+                $2 IS THE LOGICAL CONCLUSION OF MEME MATH. <br className="lg:hidden" />
+                CELEBRATING 2 YEARS OF CHAOS.
             </p>
         </div>
       </footer>

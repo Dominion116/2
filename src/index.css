@@ -31,6 +31,13 @@
   --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-serif: "Lora", serif;
   --font-mono: "IBM Plex Mono", monospace;
+
+  --animate-scroll-x: scroll-x 30s linear infinite;
+
+  @keyframes scroll-x {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
 }
 
 :root {
