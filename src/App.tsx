@@ -20,7 +20,7 @@ const Navbar = ({ onCopy }: { onCopy: () => void }) => (
                 <Button variant="ghost" size="sm" className="hidden sm:flex font-mono text-xs gap-2 text-muted-foreground hover:text-foreground" onClick={onCopy}>
                     CONTRACT
                 </Button>
-                <Button size="sm" className="rounded-full px-6 font-semibold" onClick={() => window.open('https://raydium.io/swap', '_blank')}>
+                <Button size="sm" className="rounded-full px-6 font-semibold" onClick={() => window.open('https://dexscreener.com/solana/EiRHCimGDq968yAUHeGyjr6mVBGxnWocreYNttPQEkPh', '_blank')}>
                     Buy Now
                 </Button>
             </div>
@@ -109,7 +109,7 @@ function App() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <Button size="lg" className="rounded-full px-8 lg:px-10 h-14 lg:h-16 text-base lg:text-lg font-bold shadow-xl shadow-primary/20 hover:shadow-primary/40 transition-all hover:-translate-y-1">
+                    <Button size="lg" className="rounded-full px-8 lg:px-10 h-14 lg:h-16 text-base lg:text-lg font-bold shadow-xl shadow-primary/20 hover:shadow-primary/40 transition-all hover:-translate-y-1" onClick={() => window.open('https://dexscreener.com/solana/EiRHCimGDq968yAUHeGyjr6mVBGxnWocreYNttPQEkPh', '_blank')}>
                         Buy $2 Now <ArrowRight className="ml-2 w-5 h-5" />
                     </Button>
                     <Button size="lg" variant="outline" className="rounded-full px-8 lg:px-10 h-14 lg:h-16 text-base lg:text-lg font-bold bg-background border-2 hover:bg-muted/50 transition-all" onClick={handleCopy}>
@@ -270,7 +270,7 @@ function App() {
                     </div>
                     Telegram
                 </a>
-                <a href="#" className="flex items-center gap-2 hover:text-primary transition-colors group">
+                <a href="https://dexscreener.com/solana/EiRHCimGDq968yAUHeGyjr6mVBGxnWocreYNttPQEkPh" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors group">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-secondary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
                         <BarChart2 className="w-4 h-4" />
                     </div>
