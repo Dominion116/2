@@ -15,7 +15,6 @@ const Navbar = ({ onCopy }: { onCopy: () => void }) => (
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <div className="flex items-center gap-2 font-bold text-xl tracking-tight">
                 <img src={Logo} alt="Logo" className="w-8 h-8 object-contain" />
-                <span>$2</span>
             </div>
             <div className="flex items-center gap-4">
                 <Button variant="ghost" size="sm" className="hidden sm:flex font-mono text-xs gap-2 text-muted-foreground hover:text-foreground" onClick={onCopy}>
@@ -279,8 +278,7 @@ function App() {
                 </a>
             </div>
             <p className="text-[10px] font-medium text-muted-foreground/60 max-w-[200px] lg:max-w-none text-center lg:text-right">
-                $2 IS THE LOGICAL CONCLUSION OF MEME MATH. <br className="lg:hidden" />
-                CELEBRATING 2 YEARS OF CHAOS.
+                PUMPFUN SECOND YEAR ANNIVERSARY
             </p>
         </div>
       </footer>
