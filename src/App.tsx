@@ -98,11 +98,11 @@ function App() {
             >
                 <div>
                     <Badge variant="secondary" className="mb-6 lg:mb-8 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-primary bg-primary/10 border-none">
-                        🎂 Celebrating 2 Years of Pump
+                        🎂 Celebrating 2 Years of PumpFun
                     </Badge>
                     <h1 className="text-4xl sm:text-6xl lg:text-8xl font-black tracking-tight leading-[1.1] lg:leading-[1] mb-6 lg:mb-8">
                         The Power of <br/>
-                        <span className="text-primary underline decoration-primary/20 decoration-4 sm:decoration-8 underline-offset-4 sm:underline-offset-8">$2</span>
+                        <span className="text-primary underline decoration-primary/20 decoration-4 sm:decoration-8 underline-offset-4 sm:underline-offset-8">$2.</span>
                     </h1>
                     <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium">
                         No roadmap. No complex utility. Just a commemorative token celebrating a legendary milestone. Simple, honest, and purely for the culture.
@@ -160,7 +160,7 @@ function App() {
             <div className="flex animate-scroll-x whitespace-nowrap">
                 {[...Array(10)].map((_, i) => (
                     <span key={i} className="text-[10px] uppercase tracking-[0.4em] font-black text-primary/30 mx-8">
-                        2 YEARS OF PUMP • $2 IS THE LOGICAL CHOICE • IF YOU GET IT YOU GET IT • 2 LEGIT 2 QUIT • VIBE CHECK: 200% • 
+                        PUMP SECOND YEAR ANNIVERSARY • $2 IS THE LOGICAL CHOICE • 
                     </span>
                 ))}
             </div>
